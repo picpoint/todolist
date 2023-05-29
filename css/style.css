@@ -1,0 +1,45 @@
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.indx__wrapper {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.indx__header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.indx__headermenu {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.indx__logoblock {
+    border: 1px solid red;
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+
+.indx__personal {
+    border: 1px solid red;
+    display: flex;
+    width: 200px;
+}
