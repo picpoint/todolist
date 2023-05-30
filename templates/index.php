@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="indx__body">
-            <img src="../public/pict/todo1.png" alt="todo">
+            <img src="../public/pict/todo.png" alt="todo">
         </div>
         <div class="indx__footer">
             <span>Все права не защищены. Всех прав не защитить.</span>

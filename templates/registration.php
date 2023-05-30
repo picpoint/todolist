@@ -6,10 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Регистрация</title>
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body>
 
-    Reg Page
+    <div class="reg__wrapper">
+        <div class="reg__regblock">
+            <div class="reg__regblockhdr">
+                <img src="../public/pict/logo.png" alt="logo">
+                <span>Регистрация</span>
+            </div>
+            <div class="reg__regblockbody">
+                <form action="#" method="post" name="regform">
+                    <input type="text" name="username" placeholder="Имя:">
+                    <input type="password" name="password" placeholder="Пароль:">
+                    <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
