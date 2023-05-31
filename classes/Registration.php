@@ -9,8 +9,8 @@ class Registration
     public $password;
 
 
-    public function userData() {
-
+    public function registrationUser($data) {
+        echo "some data";
     }
 
 
