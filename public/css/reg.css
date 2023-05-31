@@ -1,5 +1,5 @@
 .reg__wrapper {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,19 +35,44 @@
 }
 
 .reg__regblockbody {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     height: 430px;
 }
 
 .reg__regblockbody form {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
 
 .reg__regblockbody form input {
+    border: 1px solid lightgray;
+    display: flex;
+    width: 80%;
+    height: 45px;
+    margin: 20px 0;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    padding-left: 7px;
+}
 
+.reg__regblockbody form button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 55px;
+    margin-top: 50px;
+    background-color: #7c00b1;
+    font-size: 1.1rem;
+    font-family: Play-Regular;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
 }

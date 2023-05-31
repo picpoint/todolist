@@ -19,8 +19,9 @@
             <div class="reg__regblockbody">
                 <form action="#" method="post" name="regform">
                     <input type="text" name="username" placeholder="Имя:">
+                    <input type="email" name="email" placeholder="E-mail:">
                     <input type="password" name="password" placeholder="Пароль:">
-                    <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                    <button type="submit" name="regbtn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
                 </form>
             </div>
         </div>
