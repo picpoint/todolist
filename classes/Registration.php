@@ -1,16 +1,16 @@
 <?php
 
+include __DIR__ . '/DB.php';
+
+$config = __DIR__ . '../config.php';
+
 
 class Registration
 {
 
-    public $name;
-    public $email;
-    public $password;
-
-
     public function registrationUser($data) {
-        echo "some data";
+        $reg = new DB();
+        $reg->execute();
     }
 
 
