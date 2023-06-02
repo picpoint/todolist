@@ -10,7 +10,7 @@ class Registration
 
     public function registrationUser($data) {
         $reg = new DB();
-        $reg->execute();
+        $reg->execute($data);
     }
 
 
