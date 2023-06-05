@@ -13,14 +13,10 @@ class DB
     }
 
     public function execute($data) {
-        $username = $data['username'];
-        $email = $data['email'];
-        $password = $data['password'];
-
-        print_r($data);
-
-
-        $sth = $this->dbh->prepare("INSERT INTO user(name, email, password) VALUES ('$username', '$email', '$password')" );
+        $name = $data[0];
+        $email = $data[1];
+        $password = $data[2];
+        $sth = $this->dbh->prepare("INSERT INTO user(name, email, password) VALUES ('$name', '$email', '$password')" );
         $sth->execute();
     }
 
