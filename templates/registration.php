@@ -17,7 +17,7 @@
                 <span>Регистрация</span>
             </div>
             <div class="reg__regblockbody">
-                <form action="registration.php" method="post" name="regform">
+                <form action="../registration.php" method="post" name="regform">
                     <input type="text" name="name" placeholder="Имя:">
                     <input type="email" name="email" placeholder="E-mail:">
                     <input type="password" name="password" placeholder="Пароль:">

@@ -1,12 +1,6 @@
 <?php
 
-include __DIR__ . '/classes/View.php';
-include __DIR__ . '/classes/Registration.php';
-
-$regPageTmp = __DIR__ . '/templates/registration.php';
-
-$regPage = new View($regPageTmp);
-$regPage->showPage();
+include __DIR__ . '/autoload.php';
 
 
 if (isset($_POST['regbtn'])) {
@@ -25,6 +19,14 @@ if (isset($_POST['regbtn'])) {
 
         $reg = new Registration();
         $reg->registrationUser($userData);
+
+        header('Location: lk.php');
     }
 
 }
+
+
+$regPageTmp = __DIR__ . '/templates/registration.php';
+
+$regPage = new View($regPageTmp);
+$regPage->showPage();
