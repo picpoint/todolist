@@ -1,0 +1,41 @@
+.lk__wrapper {
+    border: 1px solid red;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.lk__panelleft {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.lk__panellefthdr {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.lk__panellefthdr img {
+    border: 1px solid red;
+    width: 70px;
+    height: 70px;
+}
+
+.lk__panellefthdr span {
+    text-align: center;
+}
+
+
+
+
+
+.lk__panelright {
+    border: 1px solid red;
+    display: flex;
+    width: 80%;
+}
