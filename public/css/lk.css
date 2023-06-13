@@ -28,7 +28,49 @@
 
 .lk__panellefthdr span {
     text-align: center;
+    font-family: Play-Regular;
 }
+
+.lk__panelleftmenu {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.lk__panelleftitem {
+    border: 1px solid red;
+    display: flex;
+    height: 50px;
+}
+
+.lk__panelleftitemicon {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 1.5rem;
+}
+
+.lk__panelleftitemtext {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: Play-Regular;
+}
+
+.lk__panelleftitemtext a {
+    text-decoration: none;
+    color: black;
+}
+
+
 
 
 

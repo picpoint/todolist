@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/fontawesome.css">
+    <link rel="stylesheet" href="../public/css/all.min.css">
     <title>Личный кабинет</title>
 </head>
 <body>
@@ -16,9 +18,22 @@
                 <img src="../public/pict/avatar.jpg" alt="avatar">
                 <span>WERY WERY LONG NAME</span>
             </div>
+            <div class="lk__panelleftmenu">
+                <div class="lk__panelleftitem">
+                    <div class="lk__panelleftitemicon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </div>
+                    <div class="lk__panelleftitemtext">
+                        <a href="#">Календарь</a>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div class="lk__panelright"></div>
+        <div class="lk__panelright">
+
+        </div>
     </div>
 
 </body>
