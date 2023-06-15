@@ -1,27 +1,28 @@
 .lk__wrapper {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     min-height: 100vh;
     min-width: 100vw;
 }
 
 .lk__panelleft {
-    border: 1px solid red;
+    border-right: 1px solid lightgray;
     display: flex;
     flex-direction: column;
     width: 20%;
 }
 
 .lk__panellefthdr {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    background-color: #F3F3F3;
 }
 
 .lk__panellefthdr img {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 70px;
     height: 70px;
 }
@@ -32,7 +33,7 @@
 }
 
 .lk__panelleftmenu {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -40,13 +41,13 @@
 }
 
 .lk__panelleftitem {
-    border: 1px solid red;
+    border: 1px solid lightgray;
     display: flex;
     height: 50px;
 }
 
 .lk__panelleftitemicon {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +57,7 @@
 }
 
 .lk__panelleftitemtext {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +78,43 @@
 
 
 .lk__panelright {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
+    flex-direction: column;
     width: 80%;
+    height: 70px;
+    background-color: #F3F3F3;
+}
+
+.lk__panelrightmenu {
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.lk__panelrightmenublockexit {
+    /*border: 1px solid red;*/
+    display: flex;
+    width: 100px;
+}
+
+.lk__panelrightmenublockexit form {
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lk__panelrightmenublockexit form button {
+    border: none;
+    width: 90%;
+    height: 30px;
+    font-family: Play-Regular;
+    background-color: #771AA9;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
 }

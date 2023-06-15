@@ -26,13 +26,26 @@
                     <div class="lk__panelleftitemtext">
                         <a href="#">Календарь</a>
                     </div>
-
+                </div>
+                <div class="lk__panelleftitem">
+                    <div class="lk__panelleftitemicon">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </div>
+                    <div class="lk__panelleftitemtext">
+                        <a href="#">Магазины</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="lk__panelright">
-
+            <div class="lk__panelrightmenu">
+                <div class="lk__panelrightmenublockexit">
+                    <form action="#" method="post">
+                        <button type="submit">Выход</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
