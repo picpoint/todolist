@@ -12,42 +12,42 @@
 </head>
 <body>
 
-    <div class="lk__wrapper">
-        <div class="lk__panelleft">
-            <div class="lk__panellefthdr">
-                <img src="../public/pict/avatar.jpg" alt="avatar">
-                <span>WERY WERY LONG NAME</span>
-            </div>
-            <div class="lk__panelleftmenu">
-                <div class="lk__panelleftitem">
-                    <div class="lk__panelleftitemicon">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                    </div>
-                    <div class="lk__panelleftitemtext">
-                        <a href="#">Календарь</a>
-                    </div>
-                </div>
-                <div class="lk__panelleftitem">
-                    <div class="lk__panelleftitemicon">
-                        <i class="fa fa-university" aria-hidden="true"></i>
-                    </div>
-                    <div class="lk__panelleftitemtext">
-                        <a href="#">Магазины</a>
-                    </div>
-                </div>
-            </div>
+<div class="lk__wrapper">
+    <div class="lk__panelleft">
+        <div class="lk__panellefthdr">
+            <img src="../public/pict/avatar.jpg" alt="avatar">
+            <span>WERY WERY LONG NAME</span>
         </div>
-
-        <div class="lk__panelright">
-            <div class="lk__panelrightmenu">
-                <div class="lk__panelrightmenublockexit">
-                    <form action="#" method="post">
-                        <button type="submit">Выход</button>
-                    </form>
-                </div>
+        <div class="lk__panelleftmenu">
+            <div class="lk__panelleftitem">
+                <a href="#">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <span>Календарь</span>
+                </a>
+            </div>
+            <div class="lk__panelleftitem">
+                <a href="#">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <span>Магазины</span>
+                </a>
             </div>
         </div>
     </div>
+
+    <div class="lk__panelright">
+        <div class="lk__panelrightmenu">
+            <div class="lk__panelrightmenublockexit">
+                <form action="#" method="post">
+                    <button type="submit">Выход</button>
+                </form>
+            </div>
+            <div class="lk__panelrightcontent">
+
+            </div>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>

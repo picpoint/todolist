@@ -15,7 +15,7 @@
 .lk__panellefthdr {
     /*border: 1px solid red;*/
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     height: 70px;
     background-color: #F3F3F3;
@@ -23,13 +23,19 @@
 
 .lk__panellefthdr img {
     /*border: 1px solid red;*/
+    display: flex;
     width: 70px;
     height: 70px;
 }
 
 .lk__panellefthdr span {
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
     text-align: center;
     font-family: Play-Regular;
+    /*padding-left: 10px;*/
 }
 
 .lk__panelleftmenu {
@@ -46,30 +52,37 @@
     height: 50px;
 }
 
-.lk__panelleftitemicon {
-    /*border: 1px solid red;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    font-size: 1.5rem;
-}
-
-.lk__panelleftitemtext {
+.lk__panelleftitem a {
     /*border: 1px solid red;*/
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 1.1rem;
-    font-family: Play-Regular;
-}
-
-.lk__panelleftitemtext a {
+    height: 100%;
     text-decoration: none;
     color: black;
+    transition: ease-in-out 0.5s;
 }
+
+.lk__panelleftitem a:hover {
+    background-color: #771AA9;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+
+.lk__panelleftitem a i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.lk__panelleftitem a span {
+    margin-left: 10px;
+    font-family: Play-Regular;
+    font-size: 1.2rem;
+}
+
+
 
 
 
@@ -78,7 +91,7 @@
 
 
 .lk__panelright {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -87,7 +100,7 @@
 }
 
 .lk__panelrightmenu {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     display: flex;
     justify-content: flex-end;
     height: 100%;
@@ -97,6 +110,7 @@
     /*border: 1px solid red;*/
     display: flex;
     width: 100px;
+    margin-right: 10px;
 }
 
 .lk__panelrightmenublockexit form {
@@ -118,3 +132,10 @@
     color: white;
     cursor: pointer;
 }
+
+/*.lk__panelrightcontent {*/
+    /*border: 1px solid red;*/
+    /*display: flex;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+/*}*/
