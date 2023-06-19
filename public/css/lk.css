@@ -91,19 +91,18 @@
 
 
 .lk__panelright {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 70px;
-    background-color: #F3F3F3;
 }
 
 .lk__panelrightmenu {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: flex-end;
-    height: 100%;
+    height: 70px;
+    background-color: #F3F3F3;
 }
 
 .lk__panelrightmenublockexit {
@@ -127,11 +126,19 @@
     width: 90%;
     height: 30px;
     font-family: Play-Regular;
-    background-color: #771AA9;
+    background-color: black;
     border-radius: 7px;
     color: white;
     cursor: pointer;
+    transition: ease-in-out 0.5s;
 }
+
+.lk__panelrightmenublockexit form button:hover {
+    background-color: #771AA9;
+    transition: ease-in-out 0.5s;
+}
+
+
 
 /*.lk__panelrightcontent {*/
     /*border: 1px solid red;*/

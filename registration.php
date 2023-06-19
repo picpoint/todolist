@@ -18,9 +18,10 @@ if (isset($_POST['regbtn'])) {
         $userData[] = $password;
 
         $reg = new Registration();
-        $reg->registrationUser($userData);
+        $reg->checkIssetUser($userData);
+//        $reg->registrationUser($userData);
 
-        header('Location: lk.php');
+//        header('Location: lk.php');
     }
 
 }

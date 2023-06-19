@@ -31,6 +31,12 @@
                     <span>Магазины</span>
                 </a>
             </div>
+            <div class="lk__panelleftitem">
+                <a href="#">
+                    <i class="fa fa-camera" aria-hidden="true"></i>
+                    <span>Отчёт фото</span>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -40,9 +46,6 @@
                 <form action="#" method="post">
                     <button type="submit">Выход</button>
                 </form>
-            </div>
-            <div class="lk__panelrightcontent">
-
             </div>
         </div>
     </div>

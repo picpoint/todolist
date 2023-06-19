@@ -14,4 +14,12 @@ class Registration
     }
 
 
+    public function checkIssetUser($data) {
+        $reg = new DB();
+        $result = $reg->getData($data);
+        var_dump($result);
+
+    }
+
+
 }
