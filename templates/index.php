@@ -18,7 +18,7 @@
                 </div>
                 <div class="indx__personal">
                     <a href="../registration.php">Регистрация</a>
-                    <a href="#">Авторизация</a>
+                    <a href="../authorization.php">Авторизация</a>
                 </div>
             </div>
         </div>

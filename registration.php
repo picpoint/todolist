@@ -18,10 +18,16 @@ if (isset($_POST['regbtn'])) {
         $userData[] = $password;
 
         $reg = new Registration();
-        $reg->checkIssetUser($userData);
-//        $reg->registrationUser($userData);
+        $res = $reg->checkIssetUser($userData);
 
-//        header('Location: lk.php');
+        if (!empty($res)) {
+            echo "Такой пользователь уже существует";
+        } else {
+            $reg->registrationUser($userData);
+            header('Location: lk.php');
+        }
+
+
     }
 
 }

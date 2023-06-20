@@ -21,7 +21,6 @@
                     <input type="text" name="name" placeholder="Имя:">
                     <input type="email" name="email" placeholder="E-mail:">
                     <input type="password" name="password" placeholder="Пароль:">
-                    <span>qq@mail.ru</span>
                     <button type="submit" name="regbtn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
                 </form>
             </div>

@@ -16,13 +16,9 @@ class Registration
 
     public function checkIssetUser($data) {
         $checkData = new DB();
-        $res = $checkData->getData($data);
-
-        echo "<pre>";
-        print_r($res);
-        echo "</pre>";
-
-
+        $data = $checkData->getData($data);
+        $result = $data[0];
+        return $result;
     }
 
 
