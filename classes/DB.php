@@ -14,9 +14,12 @@ class DB
 
     public function getData($data) {
         $email = $data[1];
-        $sth = $this->dbh->prepare("SELECT `email` FROM `user` WHERE `email` = $email LIMIT 1");
-        $res = $sth->execute();
-        return $res;
+        $sth = $this->dbh->prepare("SELECT email FROM user WHERE email = :email LIMIT 1");
+        $sth->execute(['email' => $email]);
+        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+
+
 
     }
 
