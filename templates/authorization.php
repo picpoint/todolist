@@ -21,6 +21,7 @@
                 <input type="email" name="email" placeholder="E-mail:">
                 <input type="password" name="password" placeholder="Пароль:">
                 <button type="submit" name="authbtn">ВОЙТИ</button>
+                <span>security1@yandex.ru</span>
             </form>
         </div>
     </div>
