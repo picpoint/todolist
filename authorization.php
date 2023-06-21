@@ -12,8 +12,8 @@ $pageAuth->showPage();
 if (isset($_POST['authbtn'])) {
     if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $userData = [];
-        $userData[] = trim($_POST['email']);
-        $userData[] = trim($_POST['password']);
+        $userData['email'] = trim($_POST['email']);
+        $userData['password'] = trim($_POST['password']);
 
         $auth = new Authorization();
         $auth->checkAuth($userData);

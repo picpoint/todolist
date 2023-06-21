@@ -13,29 +13,29 @@ class DB
     }
 
     public function getData($data) {
-        $email = $data[1];
-        $sth = $this->dbh->prepare("SELECT email FROM user WHERE email = :email LIMIT 1");
+        $email = $data['email'];
+        $sth = $this->dbh->prepare("SELECT * FROM user WHERE email = :email LIMIT 1");
         $sth->execute(['email' => $email]);
         $result = $sth->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }
 
 
-    public function checkUserDate($array) {
-        $email = $array[0];
-        $password = $array[1];
-        $sth = $this->dbh->prepare("SELECT * FROM user WHERE email = :email AND password = :password LIMIT 1");
-        $sth->execute(['email' => $email, 'password' => $password]);
-        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-        return $result;
-    }
+//    public function checkUserDate($array) {
+//        $email = $array[0];
+//        $password = $array[1];
+//        $sth = $this->dbh->prepare("SELECT * FROM user WHERE email = :email AND password = :password LIMIT 1");
+//        $sth->execute(['email' => $email, 'password' => $password]);
+//        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+//        return $result;
+//    }
 
 
 
     public function execute($data) {
-        $name = $data[0];
-        $email = $data[1];
-        $password = $data[2];
+        $name = $data['name'];
+        $email = $data['email'];
+        $password = $data['password'];
         $sth = $this->dbh->prepare("INSERT INTO user(name, email, password) VALUES ('$name', '$email', '$password')" );
         $sth->execute();
     }

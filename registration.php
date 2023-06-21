@@ -13,9 +13,9 @@ if (isset($_POST['regbtn'])) {
         $email = trim($_POST['email']);
         $password = trim(password_hash($_POST['password'], PASSWORD_DEFAULT));
 
-        $userData[] = $name;
-        $userData[] = $email;
-        $userData[] = $password;
+        $userData['name'] = $name;
+        $userData['email'] = $email;
+        $userData['password'] = $password;
 
         $reg = new Registration();
         $res = $reg->checkIssetUser($userData);

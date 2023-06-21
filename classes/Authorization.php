@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '../autoload.php';
+include_once __DIR__ . '/../autoload.php';
 
 
 class Authorization
@@ -10,7 +10,11 @@ class Authorization
         print_r($data);
 
         $checkUser = new DB();
-        $checkUser->checkUserDate($data);
+        $res = $checkUser->getData($data);
+
+        print_r($res);
+
+//        $checkUser->checkUserDate($data);
 
 
     }
