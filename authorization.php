@@ -5,10 +5,6 @@ include __DIR__ . '/autoload.php';
 $pageTemplate = __DIR__ . '/templates/authorization.php';
 
 
-$pageAuth = new View($pageTemplate);
-$pageAuth->showPage();
-
-
 if (isset($_POST['authbtn'])) {
     if (!empty($_POST['email']) && !empty($_POST['password'])) {
         $userData = [];
@@ -22,3 +18,5 @@ if (isset($_POST['authbtn'])) {
     }
 }
 
+$pageAuth = new View($pageTemplate);
+$pageAuth->showPage();
