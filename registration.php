@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include __DIR__ . '/autoload.php';
 
@@ -24,10 +25,12 @@ if (isset($_POST['regbtn'])) {
             echo "Такой пользователь уже существует";
         } else {
             $reg->registrationUser($userData);
+
+            var_dump($_POST);
+            die;
+
             header('Location: lk.php');
         }
-
-
     }
 
 }

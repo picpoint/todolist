@@ -16,10 +16,12 @@
     <div class="lk__panelleft">
         <div class="lk__panellefthdr">
             <img src="../public/pict/avatar.jpg" alt="avatar">
-            <span>WERY WERY LONG NAME</span>
-            <?php
-                echo $name;
-            ?>
+            <span>
+                <?php
+                    var_dump($_POST['name']);
+                ?>
+            </span>
+
         </div>
         <div class="lk__panelleftmenu">
             <div class="lk__panelleftitem">
