@@ -10,10 +10,10 @@ class Authorization
     {
         $checkUser = new DB();
         $dataRaw = $checkUser->getData($data);
-        $res = $dataRaw[0];
+        $fullRes = $dataRaw[0];
 
-        if (!empty($res)) {
-            if ($res['email'] == $data['email'] && password_verify($data['password'], $res['password'])) {
+        if (!empty($fullRes)) {
+            if ($fullRes['email'] == $data['email'] && password_verify($data['password'], $fullRes['password'])) {
                 header('Location: lk.php');
             } else {
                 echo "Неправильно введён логин или пароль...";
