@@ -1,6 +1,9 @@
 <?php
 session_start();
-//setcookie($_POST['name'], session_id(), time() + 86400);
+setcookie('GOODCOOCKIE', session_id(), time() + 86400);
+
+var_dump($_POST);
+
 
 include __DIR__ . '/autoload.php';
 

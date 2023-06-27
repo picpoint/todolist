@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,22 +10,22 @@
 </head>
 <body>
 
-    <div class="reg__wrapper">
-        <div class="reg__regblock">
-            <div class="reg__regblockhdr">
-                <img src="../public/pict/logo.png" alt="logo">
-                <span>Регистрация</span>
-            </div>
-            <div class="reg__regblockbody">
-                <form action="../registration.php" method="post" name="regform">
-                    <input type="text" name="name" placeholder="Имя:">
-                    <input type="email" name="email" placeholder="E-mail:">
-                    <input type="password" name="password" placeholder="Пароль:">
-                    <button type="submit" name="regbtn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-                </form>
-            </div>
+<div class="reg__wrapper">
+    <div class="reg__regblock">
+        <div class="reg__regblockhdr">
+            <img src="../public/pict/logo.png" alt="logo">
+            <span>Регистрация</span>
+        </div>
+        <div class="reg__regblockbody">
+            <form action="../registration.php" method="post" name="regform">
+                <input type="text" name="name" placeholder="Имя:">
+                <input type="email" name="email" placeholder="E-mail:">
+                <input type="password" name="password" placeholder="Пароль:">
+                <button type="submit" name="regbtn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </form>
         </div>
     </div>
+</div>
 
 </body>
 </html>

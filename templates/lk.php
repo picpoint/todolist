@@ -18,7 +18,7 @@
             <img src="../public/pict/avatar.jpg" alt="avatar">
             <span>
                 <?php
-                    var_dump($_POST['name']);
+                    var_dump($_POST);
                 ?>
             </span>
 
