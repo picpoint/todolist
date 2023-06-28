@@ -17,9 +17,7 @@
         <div class="lk__panellefthdr">
             <img src="../public/pict/avatar.jpg" alt="avatar">
             <span>
-                <?php
-                    var_dump($_POST);
-                ?>
+
             </span>
 
         </div>
