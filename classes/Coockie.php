@@ -7,7 +7,7 @@ class Coockie
 {
 
     public function setCoockieUser() {
-        var_dump($_POST);
+        setcookie($_POST['name'], session_id(), time() + 86400);
     }
 
 }

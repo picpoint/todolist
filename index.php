@@ -7,3 +7,8 @@ $indexPageTmp = __DIR__ . '/templates/index.php';
 $indexPage = new View($indexPageTmp);
 $indexPage->showPage();
 
+
+
+$autoLog = new AutoEntry();
+$autoLog->autologin();
+

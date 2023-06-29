@@ -17,7 +17,9 @@
         <div class="lk__panellefthdr">
             <img src="../public/pict/avatar.jpg" alt="avatar">
             <span>
-
+                <?php
+//                    echo $_COOKIE['Name'];
+                ?>
             </span>
 
         </div>

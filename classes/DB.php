@@ -20,6 +20,13 @@ class DB
         return $result;
     }
 
+    public function getDataByName($name) {
+        $sth = $this->dbh->prepare("SELECT * FROM user WHERE name = :name LIMIT 1");
+        $sth->execute(['name' => $name]);
+        $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
+
 
     public function execute($data) {
         $name = $data['name'];
