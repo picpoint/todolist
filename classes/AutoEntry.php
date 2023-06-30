@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . '../autoload.php';
+include_once __DIR__ . '/../autoload.php';
 
 
 class AutoEntry
@@ -8,10 +8,24 @@ class AutoEntry
 
     public function autologin() {
         $arrCookie = $_COOKIE;
-        print_r($arrCookie);
+
+        foreach ($arrCookie as $key => $value) {
+            if ($key == 'PHPSESSID') {
+                continue;
+            }
+
+            $coockieKey = $key;
+        }
 
         $data = new DB();
-        $data->getDataByName();
+        $datauser = $data->getDataByName($coockieKey);
+        print_r($datauser[0]);
+
+        if ($coockieKey == $datauser[0]['name']) {
+            echo "ACCESSS";
+        } else {
+            echo "DONT";
+        }
 
     }
 
