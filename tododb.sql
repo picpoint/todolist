@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 23 2023 г., 15:55
+-- Время создания: Июн 30 2023 г., 08:53
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.4.5
 
@@ -45,7 +45,8 @@ INSERT INTO `user` (`id`, `name`, `email`, `password`, `role`, `created_at`) VAL
 (49, 'Юля', 'buhgalter@yandex.ru', '$2y$10$JiYZ90bA7enblSw72uX8D.1p3vQj5Ehrk5NEZwz0Wez3XCxsAKruK', '2', '2023-06-22 16:38:52'),
 (50, 'Надя', 'gb-rubin@magazin-rubin.ru', '$2y$10$9srOJV754SZWwmVHopK5QObZBO4.qXYaP29PVE0yUy3OnHRAECOKe', '2', '2023-06-22 16:39:42'),
 (51, 'Vlad', 'cvlad@yandex.ru', '$2y$10$x8kztynRQPCdtpiu6SmvzeMsMaPUj9O6CxLH6p62DNxXya5.qDj5a', '2', '2023-06-22 16:40:23'),
-(52, 'admin', 'rmtar@bk.ru', '$2y$10$LuzGb441Bdzr7kQmNdeeTuUJW8YxWTdDdQa186wtcl2ampG8wezUi', '0', '2023-06-23 08:48:08');
+(52, 'admin', 'rmtar@bk.ru', '$2y$10$LuzGb441Bdzr7kQmNdeeTuUJW8YxWTdDdQa186wtcl2ampG8wezUi', '0', '2023-06-23 08:48:08'),
+(73, 'qqq', 'qqq@bk.ru', '$2y$10$TXYxPlyzpXC3QHd6H.z2s.dFx7aa8cFSbs2lrJD.nOZljxA58ECyy', '2', '2023-06-30 08:48:10');
 
 --
 -- Индексы сохранённых таблиц
@@ -65,7 +66,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT для таблицы `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
